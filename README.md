@@ -1,6 +1,7 @@
 # Final_Project_CS122
 
 Project Title: Weather App
+
 Authors: Bao Nguyen, Huu Ho
 
 Project Description:
