@@ -11,34 +11,32 @@ Project Description:
    reliable online weather APIs.
 4. Users easily access data including such as the current temperature, humidity, wind speed,
    description, and pressure.
-5. Delving deeper, the app will provide a 7-day weather forecast of that area.
+5. Delving deeper, the app will provide a 5-day weather forecast of that area.
 
 Project Outline/Plan:
 Interface Plan
 1. Dashboard
    a. Search bar to enter the desired location.
-2. Detailed Forecast
+3. Detailed Forecast
    a. Show detailed forecasts for temperature, humidity, wind speed, description, and
    pressure.
-3. 7-Day Forecast Page
-   a. Card view for each day showing temperature, humidity, wind speed, description,
-   and pressure.
+4. 5-Day Forecast Page
+   a. Card view for next 5-day showing minimum and maximum temperature.
+5. Plotting Feature
+   a. Utilizing the capabilities of the matplotlib.pyplot and scipy.interpolate modules to enhance our data visualization.
+   b. Interpreting temperature trends over the next 10 hours of the current input city, ensuring users have a detailed view of temperature changes.
+   c. The graph includes time on the x-axis, temperature on the y-axis, and each data point is annotated with the corresponding temperature value
 
-Data Collection and Storage Plan (written by Bao Nguyen)
+Data Collection (written by Bao Nguyen)
 1. Data Collection
-  a. Use APIs to access real-time data, such as OpenWeatherMap or the National
-    Weather Service.
+  a. Integration with OpenWeatherMap API ensures reliable and up-to-date data.
   b. Utilize periodic fetching to guarantee current data.
-2. Storage Plan
-  a. Local storage: Preferences and most recent searches for users are saved locally on
-  the device.
 
 Data Analysis and Visualization Plan (written by Huu Ho)
 1. Data Analysis
-  a. Keep an eye on past records to comprehend local weather patterns.
-  b. Provide users with recommendations based on analysis (e.g., best time of day to
-    hang out).
+  a. Seamless integration with the OpenWeatherMap API, allowing us to retrieve comprehensive weather data, including temperature, wind speed, humidity, and more
+  b. Utilizing the TimezoneFinder module to determine the timezone of the selected city, ensuring precise and localized weather information.
 2. Visualization Plan
   a. Represent different weather situations using simple icons.
   b. Make sure there is a mix of numerical and graphical data representations for a
-    variety of user preferences.
+     variety of user preferences.
