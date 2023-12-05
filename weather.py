@@ -53,6 +53,7 @@ def getWeather():
         d.config(text=(description.title()))
         p.config(text=pressure)
         
+<<<<<<< HEAD
         plot_button = Button(root, text="Temperatures in the next 10 hours", command=plot_temperatures)
         plot_button.place(x=500, y=350)
 
@@ -143,6 +144,12 @@ def update_forecast_labels():
         image_labels[i].config(image=photo)
         image_labels[i].image = photo
         
+=======
+    except Exception as e:
+        messagebox.showerror("Weather App", "Invalid City Name")
+        
+#Search box        
+>>>>>>> 4100556c2cf473285d7a2ed5ed3576d33578a25c
 Search_image=PhotoImage(file="search.png")
 myimage=Label(image=Search_image)
 myimage.place(x=20,y=20)
@@ -198,6 +205,7 @@ d.place(x=460,y=650)
 p=Label(text="...",font=("arial",15,"bold"),bg="#16d5f1")
 p.place(x=670,y=650)
 
+<<<<<<< HEAD
 # 5 day-forecast box
 frame = Frame(root, width=200, height=750, bg="#212120")
 frame.pack(side=RIGHT)
@@ -245,3 +253,6 @@ sixthimage = Label(sixthframe, bg="#282829")
 sixthimage.place(x=1, y=15)
 
 root.mainloop()
+=======
+root.mainloop()
+>>>>>>> 4100556c2cf473285d7a2ed5ed3576d33578a25c
